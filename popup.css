@@ -1,0 +1,76 @@
+            /*style untuk popup */	
+            #friends {
+            visibility: hidden;
+            opacity: 0;
+            margin-top: -300px;
+            }
+            #friends:target {
+            visibility:visible;
+            opacity: 1;
+            background-color: rgba(0,0,0,0.8);
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:0;
+            z-index: 99999999999;
+            -webkit-transition:all 1s;
+            -moz-transition:all 1s;
+            transition:all 1s;
+            }
+            #teams {
+            visibility: hidden;
+            opacity: 0;
+            margin-top: -400px;
+            }
+            #teams:target {
+            visibility:visible;
+            opacity: 1;
+            background-color: rgba(0,0,0,0.8);
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:0;
+            z-index: 99999999999;
+            -webkit-transition:all 1s;
+            -moz-transition:all 1s;
+            transition:all 1s;
+            }
+            @media (min-width: 768px){
+            .popup-container {
+            width:300px;
+            }
+            }
+            @media (max-width: 767px){
+            .popup-container {
+            width: auto;
+            }
+            }
+            .popup-container {
+            position: relative;
+            margin:7% auto;
+            padding:30px 70px;
+            background-color: #1b0326;
+            color:#cc00ff;
+            border-radius: 3px;
+            }
+            p {
+            color:#cc00ff;
+            }
+            h4 {
+            color:#cc00ff;
+            }
+            a.popup-close {
+            position: absolute;
+            top:3px;
+            right:3px;
+            background-color: #1b0326;
+            padding:7px 10px;
+            font-size: 20px;
+            text-decoration: none;
+            line-height: 1;
+            color:#cc00ff;
+            }
