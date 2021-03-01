@@ -1,0 +1,54 @@
+/* Button Animated Border on Hover */
+            @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+            .btn-border {
+            background-color: #4f1261;
+            border: none;
+            color: #ffffff!important;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 10px 6px;
+            outline: none;
+            padding: 9px 30px 7px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 700;
+            }
+            a {
+            text-decoration: none;
+            }
+            .btn-border:before,
+            .btn-border:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+            }
+            .btn-border:before {
+            border-color: #c128c9;
+            border-top-width: 2px;
+            left: 0px;
+            top: -5px;
+            }
+            .btn-border:after {
+            border-bottom-width: 2px;
+            border-color: #c128c9;
+            bottom: -5px;
+            right: 0px;
+            }
+            .btn-border:hover {
+            background-color: #c128c9;
+            }
+            .btn-border:hover:before,
+            .btn-border:hover:after {
+            height: 100%;
+            width: 100%;
+            }
